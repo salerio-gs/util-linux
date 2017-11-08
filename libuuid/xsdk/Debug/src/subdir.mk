@@ -47,77 +47,77 @@ C_DEPS += \
 src/clear.o: /home/deploy/git/util-linux/libuuid/src/clear.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM A53 Linux gcc compiler'
-	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -fPIC -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/compare.o: /home/deploy/git/util-linux/libuuid/src/compare.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM A53 Linux gcc compiler'
-	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -fPIC -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/copy.o: /home/deploy/git/util-linux/libuuid/src/copy.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM A53 Linux gcc compiler'
-	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -fPIC -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/gen_uuid.o: /home/deploy/git/util-linux/libuuid/src/gen_uuid.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM A53 Linux gcc compiler'
-	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -fPIC -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/isnull.o: /home/deploy/git/util-linux/libuuid/src/isnull.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM A53 Linux gcc compiler'
-	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -fPIC -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/pack.o: /home/deploy/git/util-linux/libuuid/src/pack.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM A53 Linux gcc compiler'
-	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -fPIC -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/parse.o: /home/deploy/git/util-linux/libuuid/src/parse.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM A53 Linux gcc compiler'
-	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -fPIC -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/test_uuid.o: /home/deploy/git/util-linux/libuuid/src/test_uuid.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM A53 Linux gcc compiler'
-	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -fPIC -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/unpack.o: /home/deploy/git/util-linux/libuuid/src/unpack.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM A53 Linux gcc compiler'
-	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -fPIC -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/unparse.o: /home/deploy/git/util-linux/libuuid/src/unparse.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM A53 Linux gcc compiler'
-	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -fPIC -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/uuid_time.o: /home/deploy/git/util-linux/libuuid/src/uuid_time.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM A53 Linux gcc compiler'
-	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	aarch64-linux-gnu-gcc -DHAVE_NANOSLEEP -Wall -O0 -g3 -I../../../include -c -fmessage-length=0 -MT"$@" -fPIC -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

@@ -24,33 +24,22 @@ endif
 -include ../makefile.defs
 
 # Add inputs and outputs from these tool invocations to the build variables 
-ELFSIZE += \
-libuuid.so.size \
-
 
 # All Target
-all: libuuid.so secondary-outputs
+all: libuuid.so
 
 # Tool invocations
-libuuid.so: $(OBJS) $(USER_OBJS)
+libuuid.so: $(OBJS)  $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Invoking: ARM A53 Linux archiver'
-	aarch64-linux-gnu-ar -r  "libuuid.so" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Invoking: ARM A53 Linux gcc linker'
+	aarch64-linux-gnu-gcc -shared -o "libuuid.so" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
-	@echo ' '
-
-libuuid.so.size: libuuid.so
-	@echo 'Invoking: ARM A53 Linux Print Size'
-	aarch64-linux-gnu-size libuuid.so  |tee "libuuid.so.size"
-	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(ARCHIVES)$(S_UPPER_DEPS)$(C_DEPS)$(ELFSIZE) libuuid.so
+	-$(RM) $(EXECUTABLES)$(OBJS)$(S_UPPER_DEPS)$(C_DEPS) libuuid.so
 	-@echo ' '
-
-secondary-outputs: $(ELFSIZE)
 
 .PHONY: all clean dependents
 .SECONDARY:
