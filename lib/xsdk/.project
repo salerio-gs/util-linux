@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>libutil-linux</name>
+	<comment>Created by SDK v2017.1</comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>lib</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>lib/randutils.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/randutils.c</locationURI>
+		</link>
+		<link>
+			<name>lib/xsdk</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>lib/xsdk/.cproject</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/.cproject</locationURI>
+		</link>
+		<link>
+			<name>lib/xsdk/.project</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/.project</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
