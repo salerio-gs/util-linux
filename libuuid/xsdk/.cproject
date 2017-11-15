@@ -31,12 +31,19 @@
 								</option>
 								<option id="xilinx.gnu.compiler.symbols.defined.1289015922" name="Defined symbols (-D)" superClass="xilinx.gnu.compiler.symbols.defined" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HAVE_NANOSLEEP"/>
+									<listOptionValue builtIn="false" value="HAVE_SYS_FILE_H"/>
+									<listOptionValue builtIn="false" value="HAVE_STRNDUP"/>
 								</option>
 								<inputType id="xilinx.gnu.arm.a53.linux.c.compiler.input.2057428786" name="C source files" superClass="xilinx.gnu.arm.a53.linux.c.compiler.input"/>
 							</tool>
 							<tool id="xilinx.gnu.arm.a53.linux.cxx.toolchain.compiler.sharedlib.debug.1762384316" name="ARM A53 Linux g++ compiler" superClass="xilinx.gnu.arm.a53.linux.cxx.toolchain.compiler.sharedlib.debug">
 								<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.823787274" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
 								<option id="xilinx.gnu.compiler.option.debugging.level.1660344527" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.symbols.defined.591556965" superClass="xilinx.gnu.compiler.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="HAVE_NANOSLEEP"/>
+									<listOptionValue builtIn="false" value="HAVE_SYS_FILE_H"/>
+									<listOptionValue builtIn="false" value="HAVE_STRNDUP"/>
+								</option>
 							</tool>
 							<tool id="xilinx.gnu.arm.a53.linux.toolchain.archiver.sharedlib.debug.308994889" name="ARM A53 Linux archiver" superClass="xilinx.gnu.arm.a53.linux.toolchain.archiver.sharedlib.debug"/>
 							<tool id="xilinx.gnu.arm.a53.linux.c.toolchain.linker.1835290575" name="ARM A53 Linux gcc linker" superClass="xilinx.gnu.arm.a53.linux.c.toolchain.linker">
@@ -54,9 +61,15 @@
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 		</cconfiguration>
-		<cconfiguration id="xilinx.gnu.arm.a53.linux.sharedlib.release.54280368">
-			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="xilinx.gnu.arm.a53.linux.sharedlib.release.54280368" moduleId="org.eclipse.cdt.core.settings" name="Release">
-				<externalSettings/>
+		<cconfiguration id="xilinx.gnu.arm.a53.linux.sharedlib.debug.1912893963.1066839498">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="xilinx.gnu.arm.a53.linux.sharedlib.debug.1912893963.1066839498" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/libuuid"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/libuuid/Release"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="libuuid" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
 				<extensions>
 					<extension id="com.xilinx.sdk.managedbuilder.XELF.arm.a53.linux" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
@@ -67,40 +80,47 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="so" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="xilinx.gnu.arm.a53.linux.sharedlib.release.54280368" name="Release" parent="xilinx.gnu.arm.a53.linux.sharedlib.release">
-					<folderInfo id="xilinx.gnu.arm.a53.linux.sharedlib.release.54280368." name="/" resourcePath="">
-						<toolChain id="xilinx.gnu.arm.a53.linux.sharedlib.release.toolchain.37584876" name="Xilinx ARM A53 GNU/Linux Toolchain" superClass="xilinx.gnu.arm.a53.linux.sharedlib.release.toolchain">
-							<targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53.linux" id="xilinx.arm.a53.linux.sharedlib.target.gnu.base.release.135399590" isAbstract="false" name="Release Platform" superClass="xilinx.arm.a53.linux.sharedlib.target.gnu.base.release"/>
-							<builder buildPath="${workspace_loc:/libuuid}/Release" enableAutoBuild="true" id="xilinx.gnu.arm.a53.linux.toolchain.builder.sharedlib.release.255459942" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" superClass="xilinx.gnu.arm.a53.linux.toolchain.builder.sharedlib.release"/>
-							<tool id="xilinx.gnu.arm.a53.linux.c.toolchain.assembler.sharedlib.release.2082911141" name="ARM A53 Linux gcc assembler" superClass="xilinx.gnu.arm.a53.linux.c.toolchain.assembler.sharedlib.release">
-								<inputType id="xilinx.gnu.assembler.input.584497354" superClass="xilinx.gnu.assembler.input"/>
+				<configuration artifactExtension="so" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="xilinx.gnu.arm.a53.linux.sharedlib.debug.1912893963.1066839498" name="Release" parent="xilinx.gnu.arm.a53.linux.sharedlib.debug">
+					<folderInfo id="xilinx.gnu.arm.a53.linux.sharedlib.debug.1912893963.1066839498." name="/" resourcePath="">
+						<toolChain id="xilinx.gnu.arm.a53.linux.sharedlib.debug.toolchain.1127268654" name="Xilinx ARM A53 GNU/Linux Toolchain" superClass="xilinx.gnu.arm.a53.linux.sharedlib.debug.toolchain">
+							<targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53.linux" id="xilinx.arm.a53.linux.sharedlib.target.gnu.base.debug.265570541" isAbstract="false" name="Debug Platform" superClass="xilinx.arm.a53.linux.sharedlib.target.gnu.base.debug"/>
+							<builder buildPath="${workspace_loc:/libuuid}/Debug" enableAutoBuild="true" id="xilinx.gnu.arm.a53.linux.toolchain.builder.sharedlib.debug.1012517362" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" superClass="xilinx.gnu.arm.a53.linux.toolchain.builder.sharedlib.debug"/>
+							<tool id="xilinx.gnu.arm.a53.linux.c.toolchain.assembler.sharedlib.debug.1367728378" name="ARM A53 Linux gcc assembler" superClass="xilinx.gnu.arm.a53.linux.c.toolchain.assembler.sharedlib.debug">
+								<inputType id="xilinx.gnu.assembler.input.589557971" superClass="xilinx.gnu.assembler.input"/>
 							</tool>
-							<tool id="xilinx.gnu.arm.a53.linux.c.toolchain.compiler.sharedlib.release.1561032428" name="ARM A53 Linux gcc compiler" superClass="xilinx.gnu.arm.a53.linux.c.toolchain.compiler.sharedlib.release">
-								<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.1802052192" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
-								<option id="xilinx.gnu.compiler.option.debugging.level.635774062" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
-								<option id="xilinx.gnu.compiler.misc.other.1089445178" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -fPIC" valueType="string"/>
-								<option id="xilinx.gnu.compiler.dircategory.includes.270399235" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+							<tool id="xilinx.gnu.arm.a53.linux.c.toolchain.compiler.sharedlib.debug.1525208691" name="ARM A53 Linux gcc compiler" superClass="xilinx.gnu.arm.a53.linux.c.toolchain.compiler.sharedlib.debug">
+								<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.635969771" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" value="gnu.c.optimization.level.more" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.option.debugging.level.445305705" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.misc.other.672392011" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -fPIC" valueType="string"/>
+								<option id="xilinx.gnu.compiler.dircategory.includes.207607952" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
 									<listOptionValue builtIn="false" value="../../../include"/>
 								</option>
-								<option id="xilinx.gnu.compiler.symbols.defined.1731353559" name="Defined symbols (-D)" superClass="xilinx.gnu.compiler.symbols.defined" valueType="definedSymbols">
+								<option id="xilinx.gnu.compiler.symbols.defined.311879256" name="Defined symbols (-D)" superClass="xilinx.gnu.compiler.symbols.defined" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HAVE_NANOSLEEP"/>
+									<listOptionValue builtIn="false" value="HAVE_SYS_FILE_H"/>
+									<listOptionValue builtIn="false" value="HAVE_STRNDUP"/>
 								</option>
-								<inputType id="xilinx.gnu.arm.a53.linux.c.compiler.input.1718616605" name="C source files" superClass="xilinx.gnu.arm.a53.linux.c.compiler.input"/>
+								<inputType id="xilinx.gnu.arm.a53.linux.c.compiler.input.1740967382" name="C source files" superClass="xilinx.gnu.arm.a53.linux.c.compiler.input"/>
 							</tool>
-							<tool id="xilinx.gnu.arm.a53.linux.cxx.toolchain.compiler.sharedlib.release.1469340912" name="ARM A53 Linux g++ compiler" superClass="xilinx.gnu.arm.a53.linux.cxx.toolchain.compiler.sharedlib.release">
-								<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.209073494" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
-								<option id="xilinx.gnu.compiler.option.debugging.level.272291472" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+							<tool id="xilinx.gnu.arm.a53.linux.cxx.toolchain.compiler.sharedlib.debug.333635963" name="ARM A53 Linux g++ compiler" superClass="xilinx.gnu.arm.a53.linux.cxx.toolchain.compiler.sharedlib.debug">
+								<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.1326904723" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.option.debugging.level.1583817424" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.symbols.defined.1236386782" superClass="xilinx.gnu.compiler.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="HAVE_NANOSLEEP"/>
+									<listOptionValue builtIn="false" value="HAVE_SYS_FILE_H"/>
+									<listOptionValue builtIn="false" value="HAVE_STRNDUP"/>
+								</option>
 							</tool>
-							<tool id="xilinx.gnu.arm.a53.linux.toolchain.archiver.sharedlib.release.1326931932" name="ARM A53 Linux archiver" superClass="xilinx.gnu.arm.a53.linux.toolchain.archiver.sharedlib.release"/>
-							<tool id="xilinx.gnu.arm.a53.linux.c.toolchain.linker.1320622597" name="ARM A53 Linux gcc linker" superClass="xilinx.gnu.arm.a53.linux.c.toolchain.linker">
-								<option id="xilinx.gnu.c.link.option.ldflags.170824755" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -shared" valueType="string"/>
-								<inputType id="xilinx.gnu.linker.input.131774725" superClass="xilinx.gnu.linker.input">
+							<tool id="xilinx.gnu.arm.a53.linux.toolchain.archiver.sharedlib.debug.2097150871" name="ARM A53 Linux archiver" superClass="xilinx.gnu.arm.a53.linux.toolchain.archiver.sharedlib.debug"/>
+							<tool id="xilinx.gnu.arm.a53.linux.c.toolchain.linker.627330233" name="ARM A53 Linux gcc linker" superClass="xilinx.gnu.arm.a53.linux.c.toolchain.linker">
+								<option id="xilinx.gnu.c.link.option.ldflags.1158255448" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -shared" valueType="string"/>
+								<inputType id="xilinx.gnu.linker.input.1922708503" superClass="xilinx.gnu.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
-								<inputType id="xilinx.gnu.linker.input.lscript.1319612033" name="Linker Script" superClass="xilinx.gnu.linker.input.lscript"/>
+								<inputType id="xilinx.gnu.linker.input.lscript.1705373597" name="Linker Script" superClass="xilinx.gnu.linker.input.lscript"/>
 							</tool>
-							<tool id="xilinx.gnu.arm.a53.linux.cxx.toolchain.linker.1587178277" name="ARM A53 Linux g++ linker" superClass="xilinx.gnu.arm.a53.linux.cxx.toolchain.linker"/>
+							<tool id="xilinx.gnu.arm.a53.linux.cxx.toolchain.linker.2010163258" name="ARM A53 Linux g++ linker" superClass="xilinx.gnu.arm.a53.linux.cxx.toolchain.linker"/>
 						</toolChain>
 					</folderInfo>
 				</configuration>
@@ -112,8 +132,22 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="libuuid.xilinx.gnu.arm.a53.linux.sharedlib.1764129503" name="Xilinx ARM A53 Linux Shared Library" projectType="xilinx.gnu.arm.a53.linux.sharedlib"/>
 	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/libuuid"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/libuuid"/>
+		</configuration>
+	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="xilinx.gnu.arm.a53.linux.sharedlib.debug.1912893963.1066839498;xilinx.gnu.arm.a53.linux.sharedlib.debug.1912893963.1066839498.">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMA53LinuxGCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="xilinx.gnu.arm.a53.linux.sharedlib.debug.1912893963.1066839498;xilinx.gnu.arm.a53.linux.sharedlib.debug.1912893963.1066839498.;xilinx.gnu.arm.a53.linux.c.toolchain.compiler.sharedlib.debug.1525208691;xilinx.gnu.arm.a53.linux.c.compiler.input.1740967382">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMA53LinuxGCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="xilinx.gnu.arm.a53.linux.sharedlib.debug.1912893963;xilinx.gnu.arm.a53.linux.sharedlib.debug.1912893963.">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMA53LinuxGCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
@@ -127,5 +161,4 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMA53LinuxGCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
 </cproject>
